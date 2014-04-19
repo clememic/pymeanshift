@@ -107,8 +107,8 @@ msImageProcessor::msImageProcessor( void )
 	//created...
 	class_state.OUTPUT_DEFINED	= false;
 
-
-   LUV_treshold = 1.0;
+//Changed by Sushil from 1.0 to 0.1, 11/11/2008
+   LUV_treshold = 0.1;
 }
 
 /*******************************************************/
