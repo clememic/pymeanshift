@@ -39,7 +39,7 @@ SPEEDUP_MEDIUM = _pymeanshift.SPEEDUP_MEDIUM
 SPEEDUP_HIGH = _pymeanshift.SPEEDUP_HIGH    
 
 
-def segment(image, spatial_radius, range_radius, min_density, speedup_level=SPEEDUP_HIGH):
+def segment(image, spatial_radius, range_radius, min_density, speedup_level=SPEEDUP_MEDIUM):
     '''
     Segment the input image (color or grayscale).
     
@@ -72,7 +72,7 @@ class Segmenter(object):
     Segmenter class using the mean shift algorithm to segment image
     '''
     
-    def __init__(self, spatial_radius=None, range_radius=None, min_density=None, speedup_level=SPEEDUP_HIGH):
+    def __init__(self, spatial_radius=None, range_radius=None, min_density=None, speedup_level=SPEEDUP_MEDIUM):
         '''
         Segmenter init function. See function segment for keywords description.
         '''
